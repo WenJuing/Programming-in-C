@@ -12,6 +12,15 @@ int main()
         sum += factorial(i);
     }
     printf("1! + 2! + ... + 20! = %lf\n", sum);
+
+    // 程序改进
+    double t = 1, s = 0;
+    for (int i = 1; i <= 20; i++)
+    {
+        t *= i;
+        s += t;
+    }
+    printf("1! + 2! + ... + 20! = %lf\n", s);
     system("pause");
     return 0;
 }

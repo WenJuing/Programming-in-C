@@ -10,8 +10,8 @@ int main()
     for (data = 2; data <= 1000; data++)
     {
         // 1是所有数的因子，故总和先为1
-        sum = 1;
-        for (factor = 2; factor <= data/2; factor++)
+        sum = 0;
+        for (factor = 1; factor <= data/2; factor++)    // 一个数的因子必定小于等于这个数的一半
         {
             // 判断能否被整除
             if (data % factor == 0)

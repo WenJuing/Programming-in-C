@@ -7,7 +7,7 @@ int main()
     double a, x1, x2;
     printf("请输入一个正数：");
     scanf("%lf", &a);
-    x1 = a/2;
+    x1 = a/2;   // x1初值为任意值，别太大就行
     x2 = (x1 + a/x1) / 2;
     do {
         x1 = x2;
